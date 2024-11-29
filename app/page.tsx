@@ -13,12 +13,14 @@ export default function Home() {
       <main className="flex-1">
         <section id="about" className="py-24 px-6 bg-muted/40">
           <div className="container mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold mb-6">John Doe</h1>
-            <h2 className="text-2xl mb-4">Mechatronics Technician & Software Developer</h2>
+            <h1 className="text-4xl font-bold mb-6">Christopher Celaya</h1>
+            <h2 className="text-2xl mb-4">Software Developer & Mechatronic Technician</h2>
             <p className="text-lg mb-8">
-              Bridging the gap between hardware and software to create innovative solutions.
-              With expertise in both mechatronics and software development, I bring a unique
-              perspective to solving complex problems in the world of automation and technology.
+              Results-driven and innovative technician with extensive experience in computer 
+              science. Expertise in software development and project management, 
+              complemented by a strong background in preventive maintenance and industrial 
+              manufacturing. Seeking a challenging position to apply technical skills toward the 
+              growth and success of a forward-thinking organization.
             </p>
             <Button asChild>
               <a href="#contact">Get in Touch</a>
@@ -38,29 +40,24 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-12 text-center">Projects</h2>
             <div className="grid gap-6 md:grid-cols-2">
               <ProjectCard
-                title="Automated Sorting System"
-                description="Designed and implemented an automated sorting system using computer vision and robotic arms."
-                tags={["PLC", "Computer Vision", "Robotics", "Python"]}
-                githubUrl="https://github.com/johndoe/automated-sorting"
+                title="Data Center Infrastructure Management"
+                description="Maintained and operated critical data center infrastructure, ensuring 100% uptime while managing preventive maintenance schedules."
+                tags={["CMMS", "Preventive Maintenance", "Infrastructure", "Documentation"]}
               />
               <ProjectCard
-                title="IoT Environmental Monitor"
-                description="Developed a web-based dashboard for monitoring environmental data from IoT sensors."
-                tags={["React", "Node.js", "MQTT", "Arduino"]}
-                githubUrl="https://github.com/johndoe/iot-monitor"
-                liveUrl="https://iot-monitor.example.com"
+                title="Industrial Automation Systems"
+                description="Developed and maintained automated manufacturing systems including HMI interfaces, sensors, and control systems."
+                tags={["PLC", "HMI", "Automation", "Electronic Sensors"]}
               />
               <ProjectCard
-                title="Predictive Maintenance App"
-                description="Created a mobile app for predictive maintenance of industrial equipment using machine learning."
-                tags={["React Native", "TensorFlow", "Python", "AWS"]}
-                githubUrl="https://github.com/johndoe/predictive-maintenance"
+                title="Quality Assurance Systems"
+                description="Implemented quality control processes for low voltage electronic products, including testing procedures and documentation systems."
+                tags={["Quality Control", "Electronic Testing", "Documentation", "Process Improvement"]}
               />
               <ProjectCard
-                title="Smart Home Automation"
-                description="Implemented a smart home automation system with voice control and energy optimization."
-                tags={["Raspberry Pi", "Node.js", "MQTT", "Natural Language Processing"]}
-                githubUrl="https://github.com/johndoe/smart-home"
+                title="Maintenance Management System"
+                description="Utilized and optimized CMMS for scheduling and tracking maintenance tasks across facility equipment."
+                tags={["CMMS", "Process Management", "Documentation", "Maintenance Planning"]}
               />
             </div>
           </div>
@@ -85,30 +82,33 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-12 text-center">Experience</h2>
             <div className="space-y-12">
               <div>
-                <h3 className="text-xl font-semibold mb-2">Senior Mechatronics Engineer</h3>
-                <p className="text-muted-foreground mb-2">TechCorp Industries | 2018 - Present</p>
+                <h3 className="text-xl font-semibold mb-2">Data Center Technician II</h3>
+                <p className="text-muted-foreground mb-2">T5 Data Centers - San Antonio, Texas | 2021 - 2022</p>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>Lead the development of automated manufacturing systems</li>
-                  <li>Integrate IoT solutions for real-time monitoring and control</li>
-                  <li>Develop software interfaces for machine operation and data analysis</li>
+                  <li>Maintain and operate both critical and non-critical data center infrastructure, equipment, and systems</li>
+                  <li>Collaborate with a team of Critical Facilities Technician (CFT) to ensure total availability (100% uptime) while minimizing risks</li>
+                  <li>Utilize a Computerized Maintenance Management System (CMMS) for managing scheduled and unscheduled data center tasks</li>
+                  <li>Conduct preventive maintenance on electrical and mechanical equipment within the data center</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Software Developer</h3>
-                <p className="text-muted-foreground mb-2">InnoSoft Solutions | 2015 - 2018</p>
+                <h3 className="text-xl font-semibold mb-2">Mechatronics Technician</h3>
+                <p className="text-muted-foreground mb-2">CN Wire - Santa Teresa, New Mexico | 2018 - 2021</p>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>Developed web applications using React and Node.js</li>
-                  <li>Implemented RESTful APIs for industrial control systems</li>
-                  <li>Collaborated on machine learning projects for predictive maintenance</li>
+                  <li>Troubleshoot, maintain, and perform repairs and installations on factory equipment</li>
+                  <li>Interpret diagrams, schematics, and electrical code specification</li>
+                  <li>Install and repair electrical commutators, electronic sensors, and Human Machine Interface (HMI) touch panels</li>
+                  <li>Maintain a number of cooling, compression and emulsion systems required for the facility to maintain operation</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Mechatronics Intern</h3>
-                <p className="text-muted-foreground mb-2">AutoTech Robotics | Summer 2014</p>
+                <h3 className="text-xl font-semibold mb-2">Wiring Technician | Quality Assurance</h3>
+                <p className="text-muted-foreground mb-2">Schneider Electric - El Paso, Texas | 2016 - 2017</p>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>Assisted in the design and testing of robotic arm prototypes</li>
-                  <li>Programmed PLCs for automated assembly line processes</li>
-                  <li>Contributed to the development of a computer vision sorting system</li>
+                  <li>Troubleshoot electrical and electromechanical operations</li>
+                  <li>Interpret point-to-point diagrams, bill of materials, and wiring schematics</li>
+                  <li>Collaborate with engineering and assembly teams to resolve problems</li>
+                  <li>Oversee testing and assembly of low voltage electronic products for clients</li>
                 </ul>
               </div>
             </div>
@@ -119,10 +119,10 @@ export default function Home() {
           <div className="container mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
             <p className="text-lg mb-8">
-              Interested in collaborating or have a project in mind? I'd love to hear from you!
+              Based in El Paso, Texas. Let's collaborate on your next project!
             </p>
             <Button asChild size="lg">
-              <a href="mailto:john.doe@example.com">Contact Me</a>
+              <a href="mailto:chris@chriscelaya.xyz">Contact Me</a>
             </Button>
           </div>
         </section>
