@@ -1,101 +1,133 @@
-import Image from "next/image";
+import { Header } from '@/components/header'
+import { Footer } from '@/components/footer'
+import { ProjectCard } from '@/components/project-card'
+import { SkillsSection } from '@/components/skills-section'
+import { Button } from '@/components/ui/button'
+import { GallerySection } from '@/components/gallery-section'
+import { AudioSection } from '@/components/audio-section'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-1">
+        <section id="about" className="py-24 px-6 bg-muted/40">
+          <div className="container mx-auto max-w-3xl text-center">
+            <h1 className="text-4xl font-bold mb-6">John Doe</h1>
+            <h2 className="text-2xl mb-4">Mechatronics Technician & Software Developer</h2>
+            <p className="text-lg mb-8">
+              Bridging the gap between hardware and software to create innovative solutions.
+              With expertise in both mechatronics and software development, I bring a unique
+              perspective to solving complex problems in the world of automation and technology.
+            </p>
+            <Button asChild>
+              <a href="#contact">Get in Touch</a>
+            </Button>
+          </div>
+        </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+        <section id="skills" className="py-24 px-6">
+          <div className="container mx-auto max-w-5xl">
+            <h2 className="text-3xl font-bold mb-12 text-center">Skills</h2>
+            <SkillsSection />
+          </div>
+        </section>
+
+        <section id="projects" className="py-24 px-6 bg-muted/40">
+          <div className="container mx-auto max-w-5xl">
+            <h2 className="text-3xl font-bold mb-12 text-center">Projects</h2>
+            <div className="grid gap-6 md:grid-cols-2">
+              <ProjectCard
+                title="Automated Sorting System"
+                description="Designed and implemented an automated sorting system using computer vision and robotic arms."
+                tags={["PLC", "Computer Vision", "Robotics", "Python"]}
+                githubUrl="https://github.com/johndoe/automated-sorting"
+              />
+              <ProjectCard
+                title="IoT Environmental Monitor"
+                description="Developed a web-based dashboard for monitoring environmental data from IoT sensors."
+                tags={["React", "Node.js", "MQTT", "Arduino"]}
+                githubUrl="https://github.com/johndoe/iot-monitor"
+                liveUrl="https://iot-monitor.example.com"
+              />
+              <ProjectCard
+                title="Predictive Maintenance App"
+                description="Created a mobile app for predictive maintenance of industrial equipment using machine learning."
+                tags={["React Native", "TensorFlow", "Python", "AWS"]}
+                githubUrl="https://github.com/johndoe/predictive-maintenance"
+              />
+              <ProjectCard
+                title="Smart Home Automation"
+                description="Implemented a smart home automation system with voice control and energy optimization."
+                tags={["Raspberry Pi", "Node.js", "MQTT", "Natural Language Processing"]}
+                githubUrl="https://github.com/johndoe/smart-home"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="gallery" className="py-24 px-6">
+          <div className="container mx-auto max-w-5xl">
+            <h2 className="text-3xl font-bold mb-12 text-center">Work Gallery</h2>
+            <GallerySection />
+          </div>
+        </section>
+
+        <section id="audio" className="py-24 px-6 bg-muted/40">
+          <div className="container mx-auto max-w-7xl">
+            <h2 className="text-3xl font-bold mb-12 text-center">Audio Projects</h2>
+            <AudioSection />
+          </div>
+        </section>
+
+        <section id="experience" className="py-24 px-6">
+          <div className="container mx-auto max-w-3xl">
+            <h2 className="text-3xl font-bold mb-12 text-center">Experience</h2>
+            <div className="space-y-12">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Senior Mechatronics Engineer</h3>
+                <p className="text-muted-foreground mb-2">TechCorp Industries | 2018 - Present</p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Lead the development of automated manufacturing systems</li>
+                  <li>Integrate IoT solutions for real-time monitoring and control</li>
+                  <li>Develop software interfaces for machine operation and data analysis</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Software Developer</h3>
+                <p className="text-muted-foreground mb-2">InnoSoft Solutions | 2015 - 2018</p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Developed web applications using React and Node.js</li>
+                  <li>Implemented RESTful APIs for industrial control systems</li>
+                  <li>Collaborated on machine learning projects for predictive maintenance</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Mechatronics Intern</h3>
+                <p className="text-muted-foreground mb-2">AutoTech Robotics | Summer 2014</p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Assisted in the design and testing of robotic arm prototypes</li>
+                  <li>Programmed PLCs for automated assembly line processes</li>
+                  <li>Contributed to the development of a computer vision sorting system</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" className="py-24 px-6 bg-muted/40">
+          <div className="container mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
+            <p className="text-lg mb-8">
+              Interested in collaborating or have a project in mind? I'd love to hear from you!
+            </p>
+            <Button asChild size="lg">
+              <a href="mailto:john.doe@example.com">Contact Me</a>
+            </Button>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <Footer />
     </div>
-  );
+  )
 }
