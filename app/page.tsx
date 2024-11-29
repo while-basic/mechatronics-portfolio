@@ -38,7 +38,7 @@ export default function Home() {
 
         <section id="projects" className="py-24 px-6 bg-muted/40">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-3xl font-bold mb-12 text-center">Projects</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">Experienced In</h2>
             <div className="grid gap-6 md:grid-cols-2">
               <ProjectCard
                 title="Data Center Infrastructure Management"
