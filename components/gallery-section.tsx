@@ -13,31 +13,31 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
-    title: "Automated Assembly Line",
-    description: "Designed and implemented an automated assembly line for electronic components, increasing production efficiency by 40%.",
-    imageUrl: "/placeholder.svg?height=200&width=300",
-    tags: ["Automation", "PLC", "Robotics"]
+    title: "Data Center Infrastructure",
+    description: "Maintained critical data center infrastructure with 100% uptime, managing preventive maintenance and system monitoring.",
+    imageUrl: "/gallery/t5.jpeg",
+    tags: ["Infrastructure", "CMMS", "Maintenance"]
   },
   {
     id: 2,
-    title: "Smart Factory Monitoring System",
-    description: "Developed a real-time monitoring system for factory equipment, reducing downtime by 25% through predictive maintenance.",
-    imageUrl: "/placeholder.svg?height=200&width=300",
-    tags: ["IoT", "Data Analytics", "Web Development"]
+    title: "Industrial Automation",
+    description: "Implemented and maintained automated manufacturing systems, including HMI interfaces and electronic sensors.",
+    imageUrl: "/gallery/automation.jpg",
+    tags: ["Automation", "HMI", "PLC"]
   },
   {
     id: 3,
-    title: "Robotic Arm for Precision Manufacturing",
-    description: "Programmed and integrated a robotic arm for high-precision manufacturing tasks, improving product quality and consistency.",
-    imageUrl: "/placeholder.svg?height=200&width=300",
-    tags: ["Robotics", "Motion Control", "Computer Vision"]
+    title: "Electronics Manufacturing",
+    description: "Performed quality assurance and testing for low voltage electronic products, ensuring high manufacturing standards.",
+    imageUrl: "/gallery/electronics.jpg",
+    tags: ["Quality Control", "Electronics", "Testing"]
   },
   {
     id: 4,
-    title: "Energy Management System",
-    description: "Created an intelligent energy management system for industrial facilities, resulting in a 20% reduction in energy consumption.",
-    imageUrl: "/placeholder.svg?height=200&width=300",
-    tags: ["Energy Efficiency", "Machine Learning", "SCADA"]
+    title: "Preventive Maintenance",
+    description: "Developed and executed comprehensive preventive maintenance programs for industrial equipment and systems.",
+    imageUrl: "/gallery/datacenter.jpg",
+    tags: ["Maintenance", "Documentation", "CMMS"]
   }
 ]
 
@@ -71,4 +71,3 @@ export function GallerySection() {
     </div>
   )
 }
-

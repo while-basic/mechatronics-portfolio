@@ -5,6 +5,7 @@ import { SkillsSection } from '@/components/skills-section'
 import { Button } from '@/components/ui/button'
 import { GallerySection } from '@/components/gallery-section'
 import { AudioSection } from '@/components/audio-section'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -82,8 +83,20 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-12 text-center">Experience</h2>
             <div className="space-y-12">
               <div>
-                <h3 className="text-xl font-semibold mb-2">Data Center Technician II</h3>
-                <p className="text-muted-foreground mb-2">T5 Data Centers - San Antonio, Texas | 2021 - 2022</p>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="relative w-12 h-12 rounded-full overflow-hidden bg-muted">
+                    <Image
+                      src="/companies/t5.jpeg"
+                      alt="T5 Data Centers logo"
+                      fill
+                      className="object-contain p-2"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold">Data Center Technician II</h3>
+                    <p className="text-muted-foreground">T5 Data Centers - San Antonio, Texas | 2021 - 2022</p>
+                  </div>
+                </div>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>Maintain and operate both critical and non-critical data center infrastructure, equipment, and systems</li>
                   <li>Collaborate with a team of Critical Facilities Technician (CFT) to ensure total availability (100% uptime) while minimizing risks</li>
@@ -92,8 +105,20 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Mechatronics Technician</h3>
-                <p className="text-muted-foreground mb-2">CN Wire - Santa Teresa, New Mexico | 2018 - 2021</p>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="relative w-12 h-12 rounded-full overflow-hidden bg-muted">
+                    <Image
+                      src="/companies/cnwire.jpeg"
+                      alt="CN Wire logo"
+                      fill
+                      className="object-contain p-2"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold">Mechatronics Technician</h3>
+                    <p className="text-muted-foreground">CN Wire - Santa Teresa, New Mexico | 2018 - 2021</p>
+                  </div>
+                </div>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>Troubleshoot, maintain, and perform repairs and installations on factory equipment</li>
                   <li>Interpret diagrams, schematics, and electrical code specification</li>
@@ -102,8 +127,20 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Wiring Technician | Quality Assurance</h3>
-                <p className="text-muted-foreground mb-2">Schneider Electric - El Paso, Texas | 2016 - 2017</p>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="relative w-12 h-12 rounded-full overflow-hidden bg-muted">
+                    <Image
+                      src="/companies/schneider.png"
+                      alt="Schneider Electric logo"
+                      fill
+                      className="object-contain p-2"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold">Wiring Technician | Quality Assurance</h3>
+                    <p className="text-muted-foreground">Schneider Electric - El Paso, Texas | 2016 - 2017</p>
+                  </div>
+                </div>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>Troubleshoot electrical and electromechanical operations</li>
                   <li>Interpret point-to-point diagrams, bill of materials, and wiring schematics</li>
