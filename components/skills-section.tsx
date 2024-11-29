@@ -11,7 +11,7 @@ const skillsData = [
   },
   {
     category: "Tools & Technologies",
-    skills: ["Git", "Docker", "CI/CD", "AWS", "Arduino", "Raspberry Pi"]
+    skills: ["Git", "Docker", "AWS", "Arduino", "Raspberry Pi"]
   }
 ]
 

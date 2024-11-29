@@ -38,6 +38,13 @@ const galleryItems: GalleryItem[] = [
     description: "Developed and executed comprehensive preventive maintenance programs for industrial equipment and systems.",
     imageUrl: "/gallery/datacenter.jpg",
     tags: ["Maintenance", "Documentation", "CMMS"]
+  },
+  {
+    id: 5,
+    title: "Electrical Wiring",
+    description: "Installed and maintained high voltage electrical wiring systems, ensuring safe and efficient operation.",
+    imageUrl: "/gallery/wiring-1.jpg",
+    tags: ["Electrical", "Wiring", "Power Distribution"]
   }
 ]
 
